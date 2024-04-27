@@ -45,7 +45,7 @@
                 return false;
             }
 
-            ws = new WebSocket("ws://service.dev-scof.link:5000/api/v1/simple_chat/room/" + roomId.value + "/ws?user_id=" + userId.value);
+            ws = new WebSocket("ws://service.dev-scof.com:5000/api/v1/simple_chat/room/" + roomId.value + "/ws?user_id=" + userId.value);
             ws.onmessage = function(event) {
 
                 var messages = document.getElementById('messages')
